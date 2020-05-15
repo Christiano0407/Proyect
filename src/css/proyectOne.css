@@ -45,3 +45,34 @@
       position: relative;
       width: 50%;
   }
+  .login {
+    font-family: arpona,serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 50px;
+    margin: 50px 40px 40px;
+  }
+  .eula {
+      color: #999;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 40px;
+  }
+.right{
+background: #474A59;
+box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+color: #F1F1F2;
+position: relative;
+width: 50%;
+}
+
+ svg {
+     position: absolute;
+     width: 320px;
+ }
+ path {
+     fill: none;
+     stroke: url(#linearGradient);
+     stroke-width: 4;
+     stroke-dasharray: 240 1386;
+ }
