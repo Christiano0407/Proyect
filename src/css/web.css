@@ -116,3 +116,39 @@ font-size: 17px;
  .page3 {
      background-color: #fbfbfb;
  }
+ .page3-box {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     padding: 20px 0;
+ }
+ .page3-img {
+     max-width: 580px;
+     width: 100%;
+ }
+ .information{
+     flex: 1;
+     padding-left: 70px;
+ }
+ .button  {
+     background-color: #000507; 
+     color: white;
+     border-radius: 40px;
+     font-family: wedding-gothic-atf,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+
+ }
+ .info-title {
+    font-family: wedding-gothic-atf,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+
+ }
+ .info-all {
+     color: #000000b3;
+     margin-bottom: 20px;
+     line-height: 1.4;
+     font-size: 17px;
+ }
