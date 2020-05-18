@@ -13,9 +13,10 @@ body {
     justify-content:space-between;
   }
   .img{
-   background-image: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg);
+   background-image: url(../images/annie-spratt-jFtBa6aEJqk-unsplash.jpg);
    background-size:cover;
    background-repeat:no-repeat;
+   background-position: center;
    padding: 40px 0 100px;
    background-attachment: fixed;
   }
