@@ -19,3 +19,43 @@ body {
    padding: 40px 0 100px;
    background-attachment: fixed;
   }
+  .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .jotform-icon {
+      font-size: 60px;
+      color: #fff;
+      margin-bottom: 70px;
+  }
+  a {
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
+      font-family: sans-serif;
+      text-decoration: none;
+      margin-bottom: 70px;
+  }
+  .title1 {
+      color: #ff8001;
+      font-family: sans-serif;
+      letter-spacing: 2px;
+      font-size: 14px;
+      margin-bottom: 10px;
+  }
+  .title2 {
+      color: white;
+      font-family: arpona,serif;
+font-weight: bold;
+font-style: normal;
+font-size: 40px;
+  }
+  .introduce {
+      color:#ffffffb3;
+      font-family: wedding-gothic-atf,sans-serif;
+font-weight: 400;
+font-style: normal;
+line-height: 2.5;
+font-size: 17px;
+  }
