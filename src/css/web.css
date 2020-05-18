@@ -59,3 +59,59 @@ font-style: normal;
 line-height: 2.5;
 font-size: 17px;
   }
+  .button {
+      padding: 12px 17px;
+      border-radius: 10px;
+      border: 0;
+      font-family: wedding-gothic-atf,sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      background-color: white;
+      font-size: 100%;
+      letter-spacing: 0.5px;
+      margin-top: 5px;
+  }
+
+ /*  page2 */
+ .title3 {
+    font-family: wedding-gothic-atf,sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-top:90px;
+ }
+ .icon1-img {
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 120px;
+     height: 120px;
+ }
+ .icon-description {
+     display: block;
+     text-align: center;
+     font-family: wedding-gothic-atf,sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     color: #000000b3;
+     font-size: 15px;
+ }
+ .icon-list {
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .three-icon {
+     flex: 1;
+     padding: 30px;
+ }
+ .icon-title {
+    font-family: wedding-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ .page2 {
+  text-align: center;
+ }
+ .page3 {
+     background-color: #fbfbfb;
+ }
