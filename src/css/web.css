@@ -183,4 +183,57 @@ font-size: 17px;
      background-color: #ff8001;
      color: white;
  }
- 
+ .under {
+     background-color: #f5f5f5;
+     padding: 10px;
+     display: flex;
+ }
+ .under .container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     width: 100%;
+ }
+ .copy {
+    font-family: wedding-gothic-atf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+ .facebook {
+    background-image:url("https://i.ibb.co/x6n6DNV/facebook-logo-button.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:30px;
+    height:30px;
+ }
+
+ .twitter{
+    background-image:url("https://i.ibb.co/wzstzsd/twitter.png");
+    background-repeat:no-repeat;
+   background-size:cover;
+   width:30px;
+   height:30px;
+ }
+ .linkedin{
+    background-image:url("https://i.ibb.co/9T8kqqb/linkedin-logo-button.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:30px;
+    height:30px;
+ }
+
+ .sos-med {
+     display: flex;
+     justify-content: space-between;
+     width: 100px;
+ }
+
+ @media screen and (max-width: 840px) {
+     .information {
+         padding-left: 0;
+         text-align: center;
+     }
+     .page3-box {
+         justify-content: center;
+     }
+ }
