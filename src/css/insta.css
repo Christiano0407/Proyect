@@ -4,3 +4,83 @@
     box-sizing: border-box;
 }
 
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+}
+img {
+    display: block;
+    width: 152px;
+    height: 152px;
+}
+.container {
+    max-width: 39.5rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.btn {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+.btn:focus {
+    outline: 0.5rem auto #4d90fe;
+}
+
+.visually-hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.profile {
+    padding: 5rem 0;
+}
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.profile-image {
+    float: left;
+    width: calc(33.333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+.profile-image img {
+    border-radius: 50%;
+}
+.profile-user_settings,
+.profile-stats,
+.profile-bio {
+    float: left;
+    width: calc(66.666% - 2rem);
+}
+.profile-user_settings {
+    margin-top: 1.1rem;
+}
+.profile-user_name {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 300;
+}
