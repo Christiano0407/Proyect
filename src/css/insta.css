@@ -98,3 +98,24 @@ img {
 font-size: 2rem;
 margin-left: 1rem;
 }
+.profile-stats {
+    margin-top: 2.3rem;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; */
+}
+ /* .profile-stats ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}  */
+.profile-stats li {
+    
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+.profile-stats li:last-of-type{
+    margin-right: 0;
+}
