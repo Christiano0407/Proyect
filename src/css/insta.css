@@ -83,4 +83,18 @@ img {
     display: inline-block;
     font-size: 3.2rem;
     font-weight: 300;
+     margin-right: 10px; 
+}
+.profile-edit_btn {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+  /*   padding: 0 2.4rem;
+    margin-left: 2rem; */
+    margin-right: 2px
+}
+.profile-settings_btn {
+font-size: 2rem;
+margin-left: 1rem;
 }
