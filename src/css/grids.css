@@ -5,14 +5,26 @@
 }
 
 body {
-    background: #fff;
-    color: #333;
+    background: rgb(3, 3, 3);
+    color: #fff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 h2 {
     font-size: 45px;
     font-weight: 400;
     margin: 10px;
+}
+.bg1 {
+    background-image: url(../images/play.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg2{
+    background-image: url(../images/x-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .container {
     display: grid;
@@ -22,4 +34,28 @@ h2 {
 .container > div {
     height: 210px;
     cursor: pointer;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+.container > div:hover {
+    opacity: 0.5;
+    transform: scale(0.90);
+}
+.container > div:nth-of-type(1){
+    grid-column: 1 / 3;
+}
+.container > div:nth-of-type(6){
+    grid-column: 3 / 5;
+}
+.container > div:nth-of-type(9){
+    grid-column: 3 / 5;
+}
+.container > div:nth-of-type(10){
+    grid-column: 1 / 3;
 }
