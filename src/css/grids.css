@@ -19,3 +19,7 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
 }
+.container > div {
+    height: 210px;
+    cursor: pointer;
+}
