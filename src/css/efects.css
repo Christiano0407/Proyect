@@ -100,7 +100,7 @@ img {
 }
 .splash-content {
     padding: 1.5em;
-    display: inline-block;
+    
 }
 @media screen and (min-width: 600px) {
     .splash-text {
@@ -142,4 +142,41 @@ list-style-type: none;
 } */
 .bucket {
     padding: 1.5em;
+}
+
+.more {
+    padding: 2em;
+}
+.more-content {
+    padding: 1.5em;
+}
+
+.sidebar {
+    background: hsl(0, 0%, 90%);
+}
+.twin {
+    padding: 2em;
+    background: #2185C5;
+    color: white;
+}
+.twin:last-of-type {
+	background: #FF7F66;
+}
+
+.content-title {
+  padding: .5em;
+}
+
+.colophon {
+    padding: 2em;
+    background: hsl(0, 0%, 10%);
+    color: white;
+    text-align: center;
+}
+.colophon a{
+    color: white;
+}
+.colophon a:hover, 
+.colophon a:focus{
+border-bottom: 1px solid white;
 }
