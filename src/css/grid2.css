@@ -3,3 +3,51 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Source Serif Pro', serif;
+  font-size: 14px;
+}
+.container {
+    padding: 30px;
+}
+.s4-box {
+    font-size: 9px;
+}
+.alfa {
+    font-family: 'Alfa Slab One', serif;
+}
+.marryweather {
+    font-family: 'merriweather', serif;
+}
+.stat {
+    font-size: 44px;
+    font-family: 'ultra', serif;
+    letter-spacing: -2px;
+    padding: 30px;
+}
+.page-title {
+    padding: 30px 0;
+}
+.title-headline {
+    font-size: 50px;
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+.title-deck {
+    font-size: 18px;
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+.section-1-headline {
+    font-size: 58px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.section-1-deck {
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.hero-image {
+    padding: 30px 0;
+}
