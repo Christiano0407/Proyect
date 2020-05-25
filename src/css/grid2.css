@@ -51,3 +51,11 @@ body {
 .hero-image {
     padding: 30px 0;
 }
+.section-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #000;
+}
+.section-2-label {
+    top: -8px;
+}
