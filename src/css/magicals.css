@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
@@ -92,7 +98,10 @@ img {
 
 .logo {
   margin-top: .3em;
-	font-size: 6em;
+    font-size: 6em;
+    font-family: vibro,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .site-title {
