@@ -52,5 +52,19 @@ section {
 section h2 {
     font-size: 5rem;
     color: #fff;
-    
+
+}
+
+.home {
+   /*  background: linear-gradient(to right top, #f46b45, #eea849); */
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #fff;
+   padding: 0 20px;
+}
+.content {
+    z-index: 2;
 }
