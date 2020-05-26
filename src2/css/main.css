@@ -60,7 +60,7 @@ section h2 {
 }
 
 .home {
-   /*  background: linear-gradient(to right top, #f46b45, #eea849); */
+    background: linear-gradient(to right top, #0e0300, #310101); 
    height: 100vh;
    display: flex;
    align-items: center;
@@ -92,4 +92,27 @@ section h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     object-fit: cover;
+}
+.video-container::after {
+    content: "";
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.about{
+    background: linear-gradient(to right top, #e53935, #e35d5b);
+}
+.portfolio {
+    background: linear-gradient(to right top, #005c97, #363795);
+}
+.project {
+    background: linear-gradient(to right top, #005c97, #363795);
+}
+.contact {
+    background: linear-gradient(to right top, #e53935, #e35d5b);
 }
