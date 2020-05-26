@@ -108,11 +108,18 @@ section h2 {
     background: linear-gradient(to right top, #e53935, #e35d5b);
 }
 .portfolio {
-    background: linear-gradient(to right top, #005c97, #363795);
+    background: linear-gradient(to right top, #00973f, #953675);
 }
 .project {
-    background: linear-gradient(to right top, #005c97, #363795);
+    background: linear-gradient(to right top, #037cc7, #050763);
 }
 .contact {
+    background: linear-gradient(to right top, #e5cb35, #220101);
+}
+
+.bubble {
+    position: absolute;
+    z-index: -2;
     background: linear-gradient(to right top, #e53935, #e35d5b);
+    transform: scale(2);
 }
