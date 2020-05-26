@@ -65,4 +65,5 @@ section h2 {
     position: absolute;
     z-index: -2;
     background: linear-gradient(to right top, #f46b45, #eea849);
+    transform: scale(2);
 }

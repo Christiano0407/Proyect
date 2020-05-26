@@ -3,7 +3,7 @@ const bubble = document.querySelector(`.bubble`);
 
 const gradients = [
     "linear-gradient(to right top, #f46b45, #eea849",
-    "linear-gradient(to right top, #005c97, #36379",
+    "linear-gradient(to right top, #005c97, #363795",
     "linear-gradient(to right top, #e53935, #e35d5b"
 ];
 
@@ -32,6 +32,7 @@ entries.forEach(entry => {
      bubble.style.setProperty("top", `${directions.top}px`);
      bubble.style.setProperty("width", `${directions.width}px`);
      bubble.style.setProperty("height", `${directions.height}px`);
+     bubble.style.background = gradients[gradientIndex];
  }
 })
 }
