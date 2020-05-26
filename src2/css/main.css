@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: bebas-neue-pro,sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+}
+nav {
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h1 {
+    font-family: vibro,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+     font-size: 2.5rem; 
+     flex: 1;
+}
+nav ul {
+    font-size: 1.5rem;
+    flex:1;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h2 {
+    font-size: 5rem;
+    color: #fff;
+    
+}
