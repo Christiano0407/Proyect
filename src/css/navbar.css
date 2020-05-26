@@ -30,3 +30,27 @@ nav ul {
     display: flex;
     justify-content: space-between;
 }
+nav a{
+    color: #000;
+    text-decoration: none;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section h2 {
+    font-size: 5rem;
+    color: #fff;
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.2); 
+}
+.home {
+    background: linear-gradient(to right top, #f46b45, #eea849);
+}
+.project {
+    background: linear-gradient(to right top, #005c97, #363795);
+}
+.contact {
+    background: linear-gradient(to right top, #e53935, #e35d5b);
+}
