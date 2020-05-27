@@ -267,7 +267,6 @@ margin-top: 1rem;
     height: 100%;
 }
 
-
 .contact {
     background: linear-gradient(to right top, #e5cb35, #220101);
 }
@@ -277,4 +276,20 @@ margin-top: 1rem;
     z-index: -2;
     background: linear-gradient(to right top, #e53935, #e35d5b);
     transform: scale(2);
+}
+
+/* footer */
+.section-footer{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 4rem;
+}
+.section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+.section-footer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
