@@ -5,6 +5,8 @@
 }
 :root {
     --primary-color:#3a4052;
+    --secondary-color:#444;
+   --overlay-color: rgba(0,0,0,0.7);
 }
 body {
     font-family: bebas-neue-pro,sans-serif;
@@ -208,9 +210,44 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
 }
 
+/* images */
 .portfolio {
-    background: linear-gradient(to right top, #00973f, #953675);
+   /*  background: linear-gradient(to right top, #00973f, #953675); */
+    position: relative;
+    background-image: url(../images/play.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:var(--overlay-color) ;
+}
+.portfolio-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 800px;
+    padding: 5rem 0;
+}
+.portfolio-inner h2 {
+font-size: 5rem;
+margin-top: 1rem;
+}
+.portfolio-inner p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
 .project {
     background: linear-gradient(to right top, #037cc7, #050763);
 }
