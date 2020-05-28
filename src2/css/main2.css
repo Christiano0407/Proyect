@@ -288,3 +288,19 @@ section h2 {
     transform: scale(2);
 }
 
+/* footer */
+.section-footer{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 4rem;
+}
+.section-footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+.section-footer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
