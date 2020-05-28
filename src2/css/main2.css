@@ -128,6 +128,7 @@ section h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+   /*  background: linear-gradient(to right top, #0e0300, #000c02); */
 }
 .overlay {
     height: 100%;
@@ -289,17 +290,17 @@ section h2 {
 }
 
 /* footer */
-.section-footer{
-    background: var(--primary-color);
+.contact {
     color: #fff;
     padding: 4rem;
+    background: linear-gradient(to right top, #0e0300, #000c02);
 }
-.section-footer .container {
+.contact .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1rem;
 }
-.section-footer h3 {
+.contact h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
