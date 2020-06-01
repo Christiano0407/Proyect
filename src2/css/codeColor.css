@@ -45,6 +45,8 @@ nav ul {
 }
 li a {
     padding: 1em;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .wrapper {
@@ -78,4 +80,31 @@ h2 {
      background-size: 8px;
      background-position: 0 1px;
      padding-left: 1em;
+}
+.primary {
+    padding: 1.5em 1.5em 1.5em calc(3em + 25px);
+    background-position: 3em;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-top: 3em;
+   /*  margin-left: -3em; */
+    display: inline-block;
+}
+.clipper {
+    overflow: hidden;
+}
+section.hero {
+    padding-top: 8em;
+    background-image: url(../images/bee-balogun-KGyzk-EvTwQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+p {
+    width: 70%;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 2.4rem;
 }
