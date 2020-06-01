@@ -30,6 +30,13 @@ body {
     object-fit: cover;
     margin: 20px auto;
 }
+.container:hover.wrapper img.active {
+   height: 470px;
+   width: 350px;
+   margin: 0px auto;
+   border: none;
+   border-radius: 5px;
+}
 .wrapper .title {
     color: #fff;
     font-size: 30px;
@@ -96,4 +103,9 @@ padding: 10 0px;
     background: #fff;
     line-height: 40px;
     border-radius: 50%;
+    color: #7b00e0;
+    transition: all 0.3s;
+}
+.container .icons li a:hover {
+    transform: scale(0.9);
 }
