@@ -9,13 +9,14 @@ body {
     font-style: normal;
     padding: 20px;
     text-align: center;
+    background: #000;
 }
 .container{
     height: 470px;
     width: 350px;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 5px;
     background: linear-gradient(45deg, #7b00e0, #ae31d9);
 }
 .container .wrapper img {
@@ -72,4 +73,27 @@ padding: 10 0px;
 }
 .btn button:hover {
     transform: scale(1.2);
+    background-color: #440479;
+    color: #fff;
+}
+.container .icons {
+    position: relative;
+    margin-top: -400px;
+    list-style: none;
+    margin-left: 10px;
+}
+.container .icons li {
+    height: 40px;
+    width: 40px;
+    margin: 10px 0;
+    
+}
+.container .icons li a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    line-height: 50px;
+    background: #fff;
+    line-height: 40px;
+    border-radius: 50%;
 }
