@@ -3,6 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* :root{
+    primary-color: #FFEC8B;
+    submit-btn-bg-color: black;
+    submit-btn-color: white;    
+} */
 $primary-color: #FFEC8B;
 $submit-btn-bg-color: black;
 $submit-btn-color: white;
@@ -107,4 +112,40 @@ p {
 }
 h1 {
     font-size: 2.4rem;
+}
+
+/* sideBar */
+section.sidebar, section .subscribe {
+    font-size: .9rem;
+    line-height: 1.6rem;
+}
+section.sidebar{
+    background-color: #FFEC8B; 
+}
+.sidebar.read-btn {
+    margin-top:2em;
+    display: block;
+    background-position: 0 .3rem;
+}
+
+/* subscribe */
+
+section.subscribe {
+
+    input {
+        width: 100%;
+        padding: 1em;
+        font-family: 'Montserrat';
+        margin-bottom: 1em;
+    }
+
+    button {
+        width: 100%;
+        background: $submit-btn-bg-color;
+        color: $submit-btn-color;
+        padding: 1em;
+        border: none;
+        font-family: 'Montserrat';
+    }
+}
 }
