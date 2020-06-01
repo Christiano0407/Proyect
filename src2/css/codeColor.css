@@ -9,8 +9,10 @@ $submit-btn-color: white;
 
 body {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     display: none;
+    font-family: bilo,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 header{
     position: absolute;
@@ -28,6 +30,10 @@ a {
 a.logo{
     font-weight: bold;
     text-transform: uppercase;
+    font-family: alfarn, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
 }
 nav ul {
     list-style-type: none;
@@ -39,4 +45,37 @@ nav ul {
 }
 li a {
     padding: 1em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto;
+}
+section {
+    padding: 3em;
+}
+h1,
+h2,
+.read-btn {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+h1 {
+    font-family: alfarn, sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
+h2 {
+    font-size: 1.4rem;
+}
+.read-btn {
+    text-transform: none;
+    color: black;
+    font-weight: bold;
+     background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/arrow.svg');
+     background-repeat: no-repeat;
+     background-size: 8px;
+     background-position: 0 1px;
+     padding-left: 1em;
 }
