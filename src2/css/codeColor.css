@@ -3,14 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* :root{
-    primary-color: #FFEC8B;
-    submit-btn-bg-color: black;
-    submit-btn-color: white;    
-} */
-$primary-color: #FFEC8B;
-$submit-btn-bg-color: black;
-$submit-btn-color: white;
 
 body {
     height: 100%;
@@ -130,7 +122,6 @@ section.sidebar{
 
 /* subscribe */
 
-section.subscribe {
 
     input {
         width: 100%;
@@ -139,13 +130,5 @@ section.subscribe {
         margin-bottom: 1em;
     }
 
-    button {
-        width: 100%;
-        background: $submit-btn-bg-color;
-        color: $submit-btn-color;
-        padding: 1em;
-        border: none;
-        font-family: 'Montserrat';
-    }
-}
-}
+
+
