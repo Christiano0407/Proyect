@@ -24,8 +24,12 @@ body {
     display: flex;
 }
 .images img {
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 600px;
+}
+.images .slide{
+    width: 20%;
+    transition: .6s;
 }
 .buttons{
     position: absolute;
