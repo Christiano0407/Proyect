@@ -58,6 +58,10 @@ font-style: normal;
 font-size: 40px;
 padding: 15px 20px;
 }
+p{
+    padding: 0 20px 10px 20px;
+    text-align: justify;
+}
 i {
     position: fixed;
     margin: 20px 25px;
@@ -88,4 +92,31 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.sec4{
+    height: 100vh;
+    margin-left: -20px;
+    background-image: url(../images/aud2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+}
+.sec5{
+    height: 100vh;
+    margin-left: -20px;
+    background-image: url(../images/keagan-henman-MRBBd0g-5-Y-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sec6{
+    height: 100vh;
+    margin-left: -20px;
+    background-image: url(../images/courtney-kammers-Fn5ppkNYTAo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.ul_show {
+
 }
