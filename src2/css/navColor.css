@@ -11,3 +11,81 @@ body {
 font-weight: 400;
 font-style: normal;
 }
+ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: -240px;
+    width: 240px;
+    background: #1e1e1e1e;
+    height: 100vh;
+    overflow: hidden;
+    transition: all .3s;
+}
+ul li {
+    height: 65px;
+    outline: none;
+}
+ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 70px;
+    font-size: 20px;
+    color: white;
+    padding-left: 10%;
+    background: #1e1e1e1e;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #000;
+    border-left: 5px solid transparent;
+}
+li a.contact {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.active a {
+    color: #B93632;
+    border-left: 5px solid #B93632;
+    background: #1B1B1B;
+}
+section {
+    margin-left: 0px;
+    transition: all;
+}
+h1 {
+    font-family: arpona,serif;
+font-weight: 700;
+font-style: normal;
+font-size: 40px;
+padding: 15px 20px;
+}
+i {
+    position: fixed;
+    margin: 20px 25px;
+    font-size: 40px;
+    color: orangered;
+    cursor: pointer
+}
+.sec1{
+    background-image: url(../images/annie-spratt-jFtBa6aEJqk-unsplash.jpg);
+    background-size: cover;
+    margin-left: -20px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sec2{
+    height: 100vh;
+    margin-left: -20px;
+    background-image: url(../images/courtney-kammers-Fn5ppkNYTAo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec3 {
+    height: 100vh;
+    margin-left: -20px;
+    background-image: url(../images/Stroom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
