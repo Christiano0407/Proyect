@@ -3,5 +3,7 @@ $(document).ready(function(){
         $(`ul`).toggleClass(`ul_show`);
         $(`section`).toggleClass(`slide_image`);
     });
-    
-})
+    $(`li`).click(function(){
+        $(this).addClass(`active`).sibling().removeClass(`active`);
+    });
+});
