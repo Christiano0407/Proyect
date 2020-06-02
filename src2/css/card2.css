@@ -21,8 +21,8 @@ body {
     width: 100%;
 }
 .content .images img {
-    height: 400px;
-    width: 600px;
+    height: 500px;
+    width: 800px;
 }
 .btm-slide {
     position: absolute;
@@ -37,4 +37,24 @@ body {
     border: 2px solid white;
     margin: 0 3px;
     cursor: pointer;
+}
+.sliders {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    cursor: pointer;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.1);
+}
+.slider:hover{
+ background: rgba(255, 255, 255, 0.2);
+}
+.right {
+    right: 0;
+}
+.sliders span {
+    line-height: 41px;
+    font-size: 35px;
+    color: white;
 }
