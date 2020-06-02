@@ -15,5 +15,5 @@ function showImg(e){
         slider[i].style.background = "rgba(255,255,255,0.1)";
     }
     img[indexValue-1].style.display = "block";
-    slider[indexValue-1].style.background = "white";
+   /*  slider[indexValue-1].style.background = "white"; */
 }
