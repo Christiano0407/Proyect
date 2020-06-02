@@ -118,5 +118,8 @@ i {
     background-position: center;
 }
 .ul_show {
-
+  margin-left: 0px;
+}
+.slide_image {
+    margin-left: 200px;
 }
