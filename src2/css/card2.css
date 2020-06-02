@@ -3,3 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color:rgb(18, 28, 49);
+}
+.content {
+    height: 400px;
+    width: 750px;
+    position: relative;
+}
+.content .images {
+    height: 100%;
+    width: 100%;
+}
+.content .images img {
+    height: 400px;
+    width: 600px;
+}
+.btm-slide {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.btm-slide span {
+    height: 15px;
+    width: 50px;
+    border: 2px solid white;
+    margin: 0 3px;
+    cursor: pointer;
+}
