@@ -20,4 +20,8 @@ $(document).ready(function() {
     $(`.btn6`).click(function(){
         $(`.img`).css("marginLeft", "-120%");
     });
+    $(`a`).click(function(){
+        $(this).addClass(`active`).siblings()
+          .removeClass(`active`);
+    })
 });

@@ -45,3 +45,17 @@ body {
     margin: 0 5px;
     border-radius: 10px;
 }
+a.active {
+    transition: .5s;
+    transform: scale(0.999);
+    background: white;
+    animation: animate .4s;
+}
+@keyframes animate {
+    0%{
+
+    }
+    100%{
+        transform: scale(0.8);
+    }
+}
