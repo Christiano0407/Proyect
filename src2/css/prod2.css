@@ -1,93 +1,96 @@
 :root {
-    --first-color: #A29596;
-    --primary: #A29596;
-    --second-color: #33303D;
-    --black-color: #111111;
-    --white-color: #FFF;
-  }
-  
-  /*===== Fuente y tipografia =====*/
+  --first-color: #A29596;
+  --primary: #A29596;
+  --second-color: #33303D;
+  --black-color: #111111;
+  --white-color: #FFF;
+}
+/*===== Fuente y tipografia =====*/
+:root {
+  --body-font: 'Roboto', sans-serif;
+  --biggest-font-size: 1.5rem;
+  --big-font-size: 1.5rem;
+  --normal-font-size: 0.938rem;
+  --smaller-font-size: 0.75rem;
+}
+@media screen and (min-width: 968px) {
   :root {
-    --body-font: 'Roboto', sans-serif;
-    --biggest-font-size: 1.5rem;
-    --big-font-size: 1.5rem;
-    --normal-font-size: 0.938rem;
-    --smaller-font-size: 0.75rem;
+    --biggest-font-size: 3.25rem;
+    --big-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: 0.813rem;
   }
-  
-  @media screen and (min-width: 968px) {
-    :root {
-      --biggest-font-size: 3.25rem;
-      --big-font-size: 2.25rem;
-      --normal-font-size: 1rem;
-      --smaller-font-size: 0.813rem;
-    }
-  }
-  
-  /*===== z index =====*/
-  :root {
-    --z-back: -10;
-    --z-normal: 1;
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-modal: 1000;
-  }
-  
-  /*===== BASE =====*/
-  *, ::before, ::after {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
+}
+/*===== z index =====*/
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+/*===== BASE =====*/
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 body {
-    margin: 3rem;
-    font-family: var(--body-font);
-    background-color: #FFF;
-    color: var(--black-color);
+  margin: 3rem 0 0 0;
+  font-family: var(--body-font);
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
+h1, h2, h3, p {
+  margin: 0;
 }
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
-
-/* layout */
-.one-header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background-color: var(--white-color);
-}
+/*=====  LAYOUT =====*/
 .bd-grid {
-    max-width: 1200px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+  max-width: 1200px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-
-/* PAGES */
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--white-color);
+}
+/*===== PAGES =====*/
 .nav {
-    height: 3rem;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 968px) {
+  .nav__menu {
+    position: fixed;
+    left: -100%;
+    top: 3rem;
+    background-color: var(--white-color);
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    z-index: var(--z-fixed);
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
 }
 .nav__item {
   margin-bottom: 2rem;
@@ -99,38 +102,46 @@ a {
 .nav__toggle {
   cursor: pointer;
 }
-/* menu */
+/*Aparecer menu*/
 .show {
   left: 0;
 }
-
-/* home  */
-.home{
+/*===== Home =====*/
+.home {
   height: calc(100vh - 3rem);
+  display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1.5fr;
-  grid-template-rows: 1fr 1.5fr;
+      grid-template-rows: 1fr 1.5fr;
+      grid-template-areas: 'sneaker';
   overflow: hidden;
-  display: -ms-grid;
 }
-
-/* Sneaker */
+/*===== Sneaker =====*/
 .sneaker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: sneaker;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem 0;
   position: relative;
 }
-.sneaker__figure{
+.sneaker__figure {
   width: 240px;
   height: 240px;
-  background-color: var var(--primary);
+  background-color: var(--primary);
   border-radius: 50%;
+  -webkit-transition: .5s;
   transition: .5s;
 }
-.sneaker__img{
+.sneaker__img {
   width: 313px;
   position: absolute;
   top: 16%;
@@ -138,9 +149,11 @@ a {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
   opacity: 0;
-  filter: drop-shadow(0px 10px 10px rgba(17,17,17, 0.4));
+  -webkit-filter: drop-shadow(0px 10px 10px rgba(17, 17, 17, 0.4));
+          filter: drop-shadow(0px 10px 10px rgba(17, 17, 17, 0.4));
 }
 .sneaker__img.shows {
   opacity: 1;
@@ -149,7 +162,7 @@ a {
   position: absolute;
   right: 2%;
 }
-.sneaker__color{
+.sneaker__color {
   display: block;
   width: 10px;
   height: 10px;
@@ -162,11 +175,56 @@ a {
   -webkit-box-shadow: 0 0 2px black;
           box-shadow: 0 0 2px black;
 }
-
 .sneaker__colors-one {
   background-color: var(--first-color);
 }
-
 .sneaker__colors-two {
   background-color: var(--black-color);
+}
+/*===== Data =====*/
+.data {
+  margin-bottom: 1.5rem;
+}
+.data__subtitle {
+  font-size: var(--normal-font-size);
+  font-weight: 500;
+}
+.data__title {
+  font-size: var(--biggest-font-size);
+  margin-bottom: .5rem;
+}
+.data__description {
+  font-size: var(--normal-font-size);
+}
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*===== Size =====*/
+.size__title {
+  font-size: var(--normal-font-size);
+  margin-bottom: 1rem;
+}
+.size__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.size__tallas {
+  width: 30px;
+  height: 30px;
+  margin-right: .5rem;
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  line-height: 30px;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+.size__tallas.active {
+  background-color: var(--primary);
+  color: var(--white-color);
 }
