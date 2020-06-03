@@ -1,0 +1,115 @@
+:root {
+    --first-color: #A29596;
+    --primary: #A29596;
+    --second-color: #33303D;
+    --black-color: #111111;
+    --white-color: #FFF;
+  }
+  
+  /*===== Fuente y tipografia =====*/
+  :root {
+    --body-font: 'Roboto', sans-serif;
+    --biggest-font-size: 1.5rem;
+    --big-font-size: 1.5rem;
+    --normal-font-size: 0.938rem;
+    --smaller-font-size: 0.75rem;
+  }
+  
+  @media screen and (min-width: 968px) {
+    :root {
+      --biggest-font-size: 3.25rem;
+      --big-font-size: 2.25rem;
+      --normal-font-size: 1rem;
+      --smaller-font-size: 0.813rem;
+    }
+  }
+  
+  /*===== z index =====*/
+  :root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+  }
+  
+  /*===== BASE =====*/
+  *, ::before, ::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+body {
+    margin: 3rem;
+    font-family: var(--body-font);
+    background-color: #FFF;
+    color: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* layout */
+.one-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--white-color);
+}
+.bd-grid {
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* PAGES */
+.nav {
+    height: 3rem;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.nav__item {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.nav__link {
+  color: var(--black-color);
+}
+.nav__toggle {
+  cursor: pointer;
+}
+/* menu */
+.show {
+  left: 0;
+}
+
+/* home  */
+.home{
+  height: calc(100vh - 3rem);
+  display: grid;
+  -ms-grid-rows: 1fr 1.5fr;
+  grid-template-rows: 1fr 1.5fr;
+  overflow: hidden;
+  display: -ms-grid;
+}
