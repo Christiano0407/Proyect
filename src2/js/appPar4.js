@@ -31,3 +31,27 @@ function contentAnimation() {
         duration: 1, y:30, opacity:0, stragger:0.4, delay: 0.2
     })
 }
+$(function () {
+    barba.init({
+        sync: true,
+         transition: [
+             {
+                 async leave(data){
+                     const done = this.async();
+
+                     pageTransition();
+                     await delay(1000);
+                     done();
+                 },
+
+                 async enter(data) {
+                     contentAnimation();
+                 },
+
+                 async once(data) {
+                     contentAnimation();
+                 },
+             }
+         ]
+    })
+})
