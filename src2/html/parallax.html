@@ -10,8 +10,21 @@
     <title>Parallax</title>
 </head>
 <body>
-    <header>
-        <nav></nav>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <a href="#" class="nav__logo">Mountain</a>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                 <ul class="nav__list">
+                   <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                   <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                   <li class="nav__item"><a href="#" class="nav__link">Explore</a></li>
+                   <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+                 </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -21,6 +34,13 @@
     <footer>
 
     </footer>
+
+    
+    <script src="assets/js/rellax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="../js/appParallax.js"></script>
 </body>
