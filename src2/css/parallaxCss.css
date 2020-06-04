@@ -64,3 +64,51 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* LAYOUT */
+.bd-grid {
+    max-width: 1200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.l-header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: var(--z-modal);
+}
+/* NAV */
+.nav {
+    height: 3rem;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.nav__logo{
+    color: var(--white-color);
+}
+.nav__item{
+    margin-bottom: 2rem;
+}
+.nav__link{
+    color: var(--white-color);
+}
+.nav__toggle {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+.show {
+    top: 3rem;
+}
+
+/* HOME */
+
+.home {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
