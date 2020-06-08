@@ -50,10 +50,49 @@
     flex: 1;
     align-items: center;
     text-align: right;
+    margin-right: 20px;
 }
 .menu-icon img {
     width: 20px;
     margin-left: 40px;
     cursor: pointer;
     
+}
+.content {
+    width: 60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: #fff;
+}
+.content h1 {
+    font-family: acumin-pro,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 80px;
+}
+.content h3 {
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 40px;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.5s ;
+}
+button:hover {
+ background: transparent;
+ color: #fff;
+}
+.btn-2 {
+    background: transparent;
 }
