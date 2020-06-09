@@ -142,4 +142,28 @@ h1 {
     font-size: 50px;
     font-weight: 700;
 }
+.card-followers-title {
+    display: block;
+    text-transform: uppercase;
+    color: var(--cardTitle);
+    letter-spacing: 5px;
+    font-size: .75em;
+}
+.card-today {
+    margin-top: 20px;
+    color: var(--lime-green);
+    font-size: .7em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-today img {
+    margin-right: 5px;
+}
+
+/* OVERVIEW */
+.overview {
+    padding-bottom: 2em;
+}
 
