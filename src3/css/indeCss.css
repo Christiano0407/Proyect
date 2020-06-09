@@ -166,5 +166,62 @@ h1 {
 .overview {
     padding-bottom: 2em;
 }
+h2 {
+    color: var(--gray);
+}
+.card-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap:1em;
+    background: var(--cardGray);
+    border-radius: 8px;
+    padding: 1.7em;
+}
+.card-small p {
+    margin:0 ;
+}
+
+/*  span img {
+    width: 20px;
+    height: 20px;
+} */
+.card-small-views{
+    color: var(--cardTitle);
+    font-weight: bold;
+    font-size: .9em;
+}
+.card-small-icon {
+    text-align: right;
+}
+.card-small-number{
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: .9;
+}
+.card-small-percentage {
+    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    color: var(--lime-green);
+    justify-content: flex-end;
+    font-size: .8em;
+    font-weight: bold;
+}
+.card-small-percentage .is-danger {
+    color: var(--bright-red);
+}
+.card-small-percentage span {
+    display: flex;
+    align-items: center;
+}
+.card-small-percentage img{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 480px){
+    
+}
 
 
