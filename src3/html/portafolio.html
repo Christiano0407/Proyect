@@ -11,35 +11,151 @@
     <title>Images</title>
 </head>
 <body>
-    <div class="contenedor">
-        <header>
-            <div class="logo">
-                <h1>Elizabeth Snow</h1>
-                <p>Desarrolladora Web</p>
-            </div>
-            <form action="">
-                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
-            </form>
-            <div class="categorias" id="categorias">
-                <a href="#" class="activo">Todos</a>
-                <a href="#">Naturaleza</a>
-                <a href="#">Ciudades</a>
-                <a href="#">Personas</a>
-                <a href="#">Animales</a>
-            </div>
-          </header>
-    </div>
-    
-    <main>
-        <section class="grid" id="grid">
+   
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<h1>Javier Damm</h1>
+				<p>Desarrollador Web</p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Naturaleza</a>
+				<a href="#">Ciudades</a>
+				<a href="#">Personas</a>
+				<a href="#">Animales</a>
+			</div>
+		</header>
 
-        </section>
-    </main>
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades autos carros calles"
+				 data-descripcion="1.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas mar playas"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales leones"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales pandas"
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas niebla"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades paisajes carreteras"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="naturaleza"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="../images/play.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
      
-     <footer>
+        <footer class="contenedor">
+			<div class="redes-sociales">
+				<div class="contenedor-icono">
+					<a href="http://www.twitter.com/falconmasters" target="_blank" class="twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="http://www.facebook.com/falconmasters" target="_blank" class="facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+				</div>
+				<div class="contenedor-icono">
+					<a href="http://www.instagram.com" target="_blank" class="instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+			</div>
+			<div class="creado-por">
+				<p>Sitio diseñado por <a href="#">Carlos Arturo</a> - <a href="https://www.falconmasters.com">FalconMasters</a></p>
+			</div>
+		</footer>
 
-     </footer>
-
+     <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
     <script src="../js/AppP.js"></script>
 </body>
 </html>
