@@ -26,7 +26,7 @@ body {
 .lang {
     right: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #64646464;
+    color: #fd00e864;
 }
 .container-left{
     position: absolute;
@@ -54,20 +54,21 @@ body {
     }
 }
 .container-left-img {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- width: 300px;
- height: 400px;
- background: url(../images/aud1.jpg)50% 50%;
- background-repeat: no-repeat;
- background-position: center;
- background-size: 21%;
- animation: animationBackground2 6s cubic-bezier(0.19,1 0.22, 1);
- animation-delay: 5s
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    box-shadow: 15px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background: url(../images/girl2.jpg) no-repeat 50% 50%;
+    background-size: 210%;
+    animation: animatedBackground2 6s cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 5s;
 }
-@keyframes animationBackground2 {
+
+@keyframes animatedBackground2 {
     from {
         background-size: 760%;
     }
@@ -84,7 +85,7 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    color: #646464;
+    color: #f585ec;
     line-height: 24px;
 }
 .left-img-cap span {
@@ -104,7 +105,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
-    background: #8f8776;
+    background: #f585ec;
 }
 .social-media {
     position: absolute;
@@ -119,7 +120,7 @@ body {
     padding: 10px 0;
 }
 .social-media ul li a {
-    color: #8f8776;
+    color: #f585ec;
 }
 .left-bottom-text{
     position: absolute;
@@ -162,4 +163,62 @@ body {
     font-weight: lighter;
     padding: 26px;
     bottom: 0;
+}
+@media (max-width: 990px) {
+    .container-left,
+    .container-right {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container-right {
+        top: 100vh;
+        left: 0;
+    }
+
+    .left-img-btn,
+    .social-media {
+        display: none;
+    }
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.loader marquee {
+    opacity: 0.2;
+    text-transform: uppercase;
+    line-height: 180px;
+    margin: 0;
+    padding: 0;
+    color: #646464;
+    font-size: 200px;
+    font-family: "Cinzel";
+}
+
+.loader .intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loader .intro h1 {
+    font-size: 124px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: #fff;
+    font-family: "Cinzel";
+}
+
+.intro-title .letter {
+    display: inline-block;
+    line-height: 1em;
 }
