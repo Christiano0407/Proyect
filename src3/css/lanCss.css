@@ -53,3 +53,102 @@ body {
         background-size: 110%;
     }
 }
+.container-left-img {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 300px;
+ height: 400px;
+ background: url(../images/aud1.jpg)50% 50%;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 21%;
+ animation: animationBackground2 6s cubic-bezier(0.19,1 0.22, 1);
+ animation-delay: 5s
+}
+@keyframes animationBackground2 {
+    from {
+        background-size: 760%;
+    }
+    to {
+        background-size: 210%;
+    }
+}
+.left-img-cap{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #646464;
+    line-height: 24px;
+}
+.left-img-cap span {
+    font-style: italic;
+}
+.left-img-btn {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    background: #8f8776;
+}
+.social-media {
+    position: absolute;
+    bottom: 0;
+}
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 2em;
+}
+.social-media ul li {
+    padding: 10px 0;
+}
+.social-media ul li a {
+    color: #8f8776;
+}
+.left-bottom-text{
+    position: absolute;
+    color: gray;
+    font-size: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+}
+.right-upper-text {
+    position: absolute;
+    color: red;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 18px;
+    opacity: 0;
+    animation: blinker is linear infinite;
+    animation-delay: 10s;
+}
+@keyframes blinker {
+    50% {
+        opacity: 1;
+    }
+}
+.right-upper-text span {
+    font-style: italic;
+}
