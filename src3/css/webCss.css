@@ -25,3 +25,24 @@ body {
     color: white;
     background: radial-gradient(rgba(43,55,96,1), rgba(11,16,35,1));
 }
+nav{
+    min-height: 10vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.logo {
+    font-size: 20px;
+}
+.page {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+.hero, .chef, .photographer img {
+    width: 50%;
+    height: 50%;
+}
