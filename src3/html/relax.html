@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/eoy0gzf.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/lanCss.css">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css?family=Cinzel&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/relaxx.css">
+    <title>Audio App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="vid-container">
+          <video loop >
+            <source src="../images/rain.mp4"  type="video/mp4">
+          </video>
+          </div>
+          <div class="time-select">
+            <button data-time="10">2 Minutes</button>
+            <button data-time="300" class="medium-mins">5 Minutes</button>
+            <button data-time="600" class="long-mins">10 Minutes</button>
+          </div>
+          <div class="player-container">
+              <audio class="song">
+                  <source src="../images/rain.mp3" />
+                </audio>
+                <img src="../images/play.svg" class="play"></img>
+                <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                  </svg>
+                <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                  </svg>
+                <img src="../images/replay.svg" class="replay"></img>
+              
+                  <h3 class="time-display">0:00</h3>      
+        </div>
+        <div class="sound-picker">
+          <button data-sound="../images/rain.mp3" data-video="../images/rain.mp4" ><img src="./images/rain.svg" alt=""></button>
+          <button data-sound="../images/beach.mp3" data-video="../images/beach.mp4"><img src="./images/beach.svg" alt=""></button>
+        </div>
+      </div>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!-- AnimeJS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+   <script src="../js/appRel.js"></script>
+</body>
+</html>
