@@ -58,3 +58,73 @@
       left: 520px;
       transform: rotate(15deg);
   }
+  .over{
+      position: absolute;
+      top: 80px;
+      left: 98px;
+      background-color: white;
+      width: 510px;
+      height: 100px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      z-index: 10;
+  }
+  .touch-pad{
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 200px;
+      width: 500px;
+      background-color: #1D2027;
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 30%;
+      border-bottom-left-radius: 30%;
+      z-index: 2;
+  }
+  .touch-pad2{
+      position: relative;
+      top: 115px;
+      left: 120px;
+      background-color: #fff;
+      height: 200px;
+      width: 470px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      z-index: 7;
+  }
+  .touch-pad2::before,
+  .touch-pad2::after{
+      content:"";
+      position: absolute;
+      height: 10px;
+      width: 20px;
+     bottom: 0;
+  }
+  .touch-pad2::after{
+      right: -20px;
+      border-radius: 10px 0 0 0px;
+      box-shadow: -10px 0 0 0 #fff;
+  }
+  .touch-pad3{
+    position: absolute;
+       border-bottom: 120px solid white;
+
+       border-left: 25px solid transparent;
+       border-right: 25px solid transparent;
+       height: 0;
+       width: 200px;
+       transform: rotate(180deg);
+       left: 0;
+       right:0;
+       bottom:0;
+       top: -210px;
+       margin:auto;
+       border-radius:10%;
+       z-index:16; 
+  box-shadow: -0em 0.4em 0em rgba(0, 0, 0, 0.1), 0px 0.2px 0 0px #fff, inset 10px 10px rgba(0,0,0,0.3);
+     
+}
