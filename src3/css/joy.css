@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 700px;
+    height: 500px;
+  background: linear-gradient(159deg, rgba(34,193,195,1) 0%, rgb(6, 196, 221) 43%, rgb(81, 133, 200) 78%, rgb(5, 31, 116) 100%);
+  
+}
+.o1{
+    position:absolute;
+    background-color:white;
+    top:110px;
+    right:100px;
+    width:100px;
+    height:300px;
+    border-radius:42%;
+    z-index:15;
+    transform:rotate(-35deg);
+  }
+  
+  .o2{
+   position:absolute;
+    background-color:white;
+    border:1px solid transparent;
+    top:120px;
+    left:70px;
+    width:130px;
+    height:300px;
+    border-radius:42%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 93% 100%, 68% 63%, 42% 31%);
+    z-index:15; 
+    transform:rotate(35deg);
+    
+  }
+  
+  .containerl1r1{
+    display:flex;
+    justify-content: space-between;
+    width:400px;
+  }
+.btn{
+    position:absolute;
+    top:85px;
+    left:110px;
+    width:80px;
+    height:30px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(29,32,39,1) 0%, rgba(104,106,111,1) 78%, rgba(131,132,136,1) 95%, rgba(214,214,215,1) 99%, rgba(255,255,255,1) 100%);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    transform:rotate(-15deg)
+  } 
+  .l2{
+      left: 520px;
+      transform: rotate(15deg);
+  }
