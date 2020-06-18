@@ -11,36 +11,106 @@ body {
     display: flex;
     align-items: center;
 }
-.container{
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
 }
-.container-principal{
-    margin-bottom: 50px;
-    margin-right: 20px;
-    width: 50%;
-    max-width: center;
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
 }
-.container-principal__images {
-    vertical-align: top;
-    margin-right: 20px;
-    width: 50%;
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	margin-right: 20px;
+	width: 50%;
     max-width: 550px;
     border-radius: 25px;
 }
-.container-principal__contenedor{
-    width: 50%;
+
+.contenido-principal__contenedor {
+	width: 50%;
 }
-.container-principal__title {
+
+.contenido-principal__titulo {
+	font-weight: normal;
     font-size: 30px;
-    font-weight: normal;
     color: #fff;
 }
-.container-principal__resume{
-    font-family: liquor-store, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 28px;
-    color: #cfcfcf;
+
+.contenido-principal__resumen {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 25px;
+	color: #CFCFCF;
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+.carousel__elemento p {
+    color: #CFCFCF;
+}
+.carousel__elemento img {
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+}
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
 }
