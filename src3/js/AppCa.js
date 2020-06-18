@@ -27,3 +27,16 @@
 		]
 	});
 }); */
+
+window.addEventListener(`load`, () => {
+    new Glider(document.querySelector(`.carousel__lista`), {
+        slidesToShow: 4,
+  slidesToScroll: 4,
+  draggable: true,
+  dots: '.carousel__indicadores',
+  arrows: {
+    prev: '.carousel.__anterior',
+    next: '.carousel__siguiente'
+     }
+    })
+} );
