@@ -1,4 +1,4 @@
-/* window.addEventListener('load', function(){
+ window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carousel__lista'), {
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -26,17 +26,5 @@
 			}
 		]
 	});
-}); */
+}); 
 
-window.addEventListener(`load`, () => {
-    new Glider(document.querySelector(`.carousel__lista`), {
-        slidesToShow: 4,
-  slidesToScroll: 4,
-  draggable: true,
-  dots: '.carousel__indicadores',
-  arrows: {
-    prev: '.carousel.__anterior',
-    next: '.carousel__siguiente'
-     }
-    })
-} );

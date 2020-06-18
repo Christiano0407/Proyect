@@ -114,3 +114,20 @@ body {
 .carousel__indicadores .glider-dot.active {
 	opacity: 1;
 }
+/* MEDIA */
+@media screen and (max-width: 800px) {
+	body {
+		padding: 40px 0;
+	}
+
+	.contenido-principal {
+		flex-direction: column;
+    }
+    .contenido-principal__titulo {
+        text-align: center;
+    }
+
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
