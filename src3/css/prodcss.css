@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box {
+    width: 190px;
+    height: 230px;
+    background-color: rgb(224, 221, 221);
+    border-radius: 20px;
+}
+.productImg img {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+}
