@@ -1,5 +1,13 @@
-body {
-  /*   display: flex;
-    justify-content: center; */
-    color: red;
+.home {
+    background:#810357;
+}
+.nav-container {
+background: rgb(39, 39, 39);
+}
+nav {
+    width: 80%;
+    margin: auto;
+    min-height: 10vh;
+    padding: 3rem 0rem;
+    display: flex;
 }
