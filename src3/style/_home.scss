@@ -10,4 +10,16 @@ nav {
     min-height: 10vh;
     padding: 3rem 0rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+    #logo{
+      flex: 1;
+    }
+
 }
