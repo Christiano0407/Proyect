@@ -99,7 +99,7 @@ nav #logo::after {
   left: 0;
   width: 8rem;
   height: 8rem;
-  background: #520105;
+  background: #2da3f7;
   border-radius: 50%;
   -webkit-transform: translate(-10%, -30%);
           transform: translate(-10%, -30%);
@@ -107,7 +107,7 @@ nav #logo::after {
 }
 
 nav .order {
-  background: #520105;
+  background: #103e5f;
   padding: 1rem 2rem;
   border-radius: 2rem;
 }
@@ -209,7 +209,7 @@ nav .order {
 }
 
 .features .card h4 {
-  margin: 3rem 0rem;
+  margin: 2rem 0rem 1rem 0rem;
 }
 
 .features .card p {
@@ -225,5 +225,9 @@ nav .order {
   background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.features .wave svg {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
