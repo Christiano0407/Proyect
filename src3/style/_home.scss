@@ -1,5 +1,5 @@
 .home {
-    background:#810357;
+    background:#000;
 }
 .nav-container {
 background: rgb(39, 39, 39);
@@ -19,7 +19,20 @@ nav {
         flex: 1;
     }
     #logo{
-      flex: 1;
+      flex: 3;
+      position: relative;
+      &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 6rem;
+          height: 6rem;
+          background: #810357;
+          border-radius: 50%;
+          transform: translate(-10%, -20%);
+          mix-blend-mode: screen;
+      }
     }
 
 }
