@@ -27,11 +27,11 @@ nav {
           position: absolute;
           top: 0;
           left: 0;
-          width: 6rem;
-          height: 6rem;
+          width: 8rem;
+          height: 8rem;
           background: #520105;
           border-radius: 50%;
-          transform: translate(-10%, -20%);
+          transform: translate(-10%, -30%);
           mix-blend-mode: screen;
       }
     }
@@ -67,6 +67,10 @@ nav {
     .info {
         grid-column: 4/5;
         grid-row: 3/4;
-        padding-bottom:3rem;
+        padding-bottom:2rem;
+        padding-top: 2rem;
+        p {
+            font-size: 1.5rem;
+        }
     }
 }
