@@ -230,4 +230,23 @@ nav .order {
 .features .wave svg {
   overflow: hidden;
 }
+
+.soon {
+  background: #000;
+  min-height: 80vh;
+  position: relative;
+  z-index: 0;
+}
+
+.soon h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.soon img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
