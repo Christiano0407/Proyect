@@ -9,3 +9,52 @@ body {
     background-color: rgb(177, 176, 176);
     background-size: 100%;
 }
+.container{
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+    background-color: transparent;
+    width: 620px;
+    height: 250px;
+    border-radius: 50px;
+    display: flex;
+    transition: 1.0s infinite ease-in-out;
+    transform: translate(0, -100px);
+}
+.container2 {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    background-color: grey;
+    width: 430px;
+    height: 250px;
+    border-radius: 30px;
+    display: flex;
+    box-shadow: -2px -2px 3px grey;
+}
+.screen {
+    position: absolute;
+    top: 1%;
+    left: 17.5%;
+    width: 400px;
+    height: 245px;
+    background-color: black;
+    border-radius: 20px;
+}
+.screen-in {
+    top:9%;
+    left: 7.5%;
+    position: absolute;
+    width: 340px;
+    height: 200px;
+    background: linear-gradient(0deg, rgba(74, 83, 84, 1)0%, rgba(103,111,111,1)5%,
+    rgba(197,200,200,1)91%, rgba(239,240,240, 1)98%,
+    rgba(255,255,255,1)100%);
+}
+.control {
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+}
