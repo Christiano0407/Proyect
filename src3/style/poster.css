@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:800");
+body {
+  background-color: #2b2c35;
+}
+
+h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.title h1 {
+  margin-top: -24px;
+  line-height: 30px;
+}
+
+.title2 h2 {
+  line-height: 22px;
+}
+
+.cross {
+  font-size: 80px;
+  color: #faa5d6;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: -5px;
+}
+
+.grid {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #40d5fa;
+  position: absolute;
+  width: 420px;
+  height: 600px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 13% 17% 21% 12.5% 23% 13.5%;
+      grid-template-columns: 13% 17% 21% 12.5% 23% 13.5%;
+  -ms-grid-rows: 14% 11% 10% 30% 10% 14% 11%;
+      grid-template-rows: 14% 11% 10% 30% 10% 14% 11%;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+}
+
+.title {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+}
+
+.title2 {
+  -ms-grid-column: 6;
+      grid-column-start: 6;
+  grid-column-end: -1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.gradient-circle {
+  -ms-grid-column: 5;
+      grid-column-start: 5;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  background: -webkit-gradient(linear, right top, left top, from(#fda7dc), to(#40d5fa));
+  background: linear-gradient(to left, #fda7dc, #40d5fa);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.gradient-circle:before {
+  position: absolute;
+  content: "";
+  background-color: #40d5fa;
+  width: 60px;
+  height: 200px;
+  z-index: -1;
+  bottom: 110px;
+  right: 30px;
+}
+
+/* .gradient-circle2 {
+    grid-column-start: 5;
+    grid-column-end: span 1;
+    grid-row-start: 5;
+    grid-row-end: span 1;
+    background: linear-gradient(to left, $yellow, $blue);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    justify-self: end;
+  } */
+/* .gradient-circle2:before {
+    position: absolute;
+    content: "";
+    background-color: #fa40ea;
+    width: 60px;
+    height: 200px;
+    z-index: -1;
+    bottom: 110px;
+    right: 10px;
+  } */
+.gradient:nth-child(1) {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fda7dc), to(#40d5fa));
+  background: linear-gradient(to top, #fda7dc, #40d5fa);
+}
+
+.gradient:nth-child(2) {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 3;
+      grid-row-end: span 3;
+  background: -webkit-gradient(linear, left top, right top, from(#fda7dc), to(#40d5fa));
+  background: linear-gradient(to right, #fda7dc, #40d5fa);
+  z-index: -5;
+}
+
+.gradient:nth-child(3) {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: -1;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  background: -webkit-gradient(linear, left bottom, left top, from(#fda7dc), to(#40d5fa));
+  background: linear-gradient(to top, #fda7dc, #40d5fa);
+  z-index: -5;
+}
+
+.gradient:nth-child(4) {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: -1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#fda7dc), to(#40d5fa));
+  background: linear-gradient(to right, #fda7dc, #40d5fa);
+  z-index: -5;
+}
+
+.overlayOne, .overlayTwo {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-row-span: 3;
+      grid-row-end: span 3;
+  z-index: -4;
+  border-radius: 15px;
+}
+
+.overlayThree, .overlayFour {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 2;
+      grid-row-end: span 2;
+  z-index: -4;
+}
+
+.overlayFive, .overlaySix {
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  -ms-grid-column-span: 2;
+      grid-column-end: span 2;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-row-span: 3;
+      grid-row-end: span 3;
+  z-index: -4;
+  border-radius: 15px;
+}
+
+.dots {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-span: 4;
+      grid-column-end: span 4;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-row-span: 4;
+      grid-row-end: span 4;
+}
+
+.overlayOne, .overlayThree, .overlayFive {
+  -webkit-perspective: 400px;
+          perspective: 400px;
+  -webkit-transform: rotateY(5deg);
+          transform: rotateY(5deg);
+  background: url("../images/bw2.jpg"), #7500f5;
+  background-blend-mode: lighten;
+  overflow: hidden;
+}
+
+.overlayTwo, .overlayFour, .overlaySix {
+  background: url("../images/bw1.jpg"), #fda7dc;
+  background-blend-mode: lighten;
+  mix-blend-mode: darken;
+}
+
+.overlayOne, .overlayTwo {
+  background-size: 200%;
+  background-position: 200% 50%;
+}
+
+.overlayThree, .overlayFour {
+  background-position: left center;
+  background-size: cover;
+}
+
+.overlayFive, .overlaySix {
+  background-size: 180%;
+  background-position: 100% 50%;
+}
+
+.dots {
+  background: radial-gradient(white 2px, transparent 2px), transparent;
+  background-position: 0 0;
+  background-size: 62px 63px;
+  z-index: 3;
+}
+/*# sourceMappingURL=poster.css.map */
